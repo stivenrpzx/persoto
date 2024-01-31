@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoto</title>
+    <link rel="icon" href="imagenes/foto.png" type="image/png" sizes="32*32">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
+
+ </head>
+ <body>
+    <header>
+       <div class="logo">
+        <img src="imagenes/foto.png" alt="logo de Persoto">
+       </div>
+       <div class="search-bar">
+        <input type="text" placeholder="Buscar en Persoto...">
+        <button type="submit">Buscar</button>
+       </div>
+             <div class="cart" onclick="mostrarCarrito()">
+             <button class="carrito-btn">
+              <img src="imagenes/carrito.png" alt="Carritocompras"></button>
+              <div id="carrito-header">
+             <h2>Mis compras</h2>
+             <table id="carrito-tabla">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>Eliminar</th>
+                </tr>
+              </thead>
+             </table>
+             <ul id="carrito-lista-header"></ul>
+        </div>
+       </div>
+            
+    </header>
+
+    <div class="buttons-container">
+        <nav>
+            <a href="categorias.html">Categorias</a>
+            <a href="Productos.html">Productos destacados</a>
+            <a href="micuenta.html">Mi cuenta</a>
+        </nav>
+    </div>
+  <div class="contenedor-seccion">
+    <section class="recomendados">
+     <div class="titulo">
+       <h2>Recomendados</h2>
+     </div>
+    <div class="imagenes">
+        <figure>
+         <img src="imagenes/bolso.jpg" alt="Bolso-persoto">
+         <figcaption>Bolso para niño <br>Precio: 90.000</figcaption>
+        <button onclick="agregarAlCarrito('bolso para niño','90.000')">Agregar al carrito</button>
+        </figure>
+        <figure>
+         <img src="imagenes/envase.jpg" alt="Envase-persoto">
+         <figcaption>Termo personalizado <br>Precio: 50.000</figcaption>
+         <button onclick="agregarAlCarrito('Termo personalizado', '50.000')">Agregar al carrito</button>
+        </figure>
+        <figure>
+         <img src="imagenes/zapato.jpg" alt="zapato-persoto">
+         <figcaption>Tenis deportivos hombre <br>Precio: 200.000</figcaption>
+         <button onclick="agregarAlCarrito(zapato, 200.000)">Agregar al carrito</button>
+        </figure>
+        <figure>
+         <img src="imagenes/audifono.jpg" alt="audifono-persoto">
+         <figcaption>AirPods <br>150.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/camiseta.jpg" alt="camiseta-persoto">
+         <figcaption>Camiseta negra<br>100.000</figcaption>
+        </figure>
+    </div>
+    <a href="#">
+        <button>Ver todo</button>
+    </a>
+   </section>
+  
+  </div>
+  <div class="contenedor-seccion">
+    <section class="recomendados">
+     <div class="titulo">
+       <h2>Promociones</h2>
+     </div>
+    <div class="imagenes">
+        <figure>
+         <img src="imagenes/nevera.png" alt="Nevera-persoto">
+         <figcaption>Nevera Challenger <br>3.500.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/bolsito.jpg" alt="Bolso-persoto">
+         <figcaption>Bolso Cuerina <br>150.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/chaleco.jpg" alt="chaleco-persoto">
+         <figcaption>Chaleco hombre <br>100.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/celular.jpg" alt="celular-persoto">
+         <figcaption>Samsung Galaxy a34 <br>1.150.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/estufa.jpg" alt="estufa-persoto">
+         <figcaption>Estufa moderna<br>2.100.000</figcaption>
+        </figure>
+    </div>
+    <a href="#">
+        <button>Ver todo</button>
+    </a>
+   </section>
+  
+  </div>
+  <div class="contenedor-seccion">
+    <section class="recomendados">
+     <div class="titulo">
+       <h2>Los mas vendidos</h2>
+     </div>
+    <div class="imagenes">
+        <figure>
+         <img src="imagenes/galaxi.jpg" alt="telefono-persoto">
+         <figcaption>Samsung Galaxy Note 10 <br>2.500.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/ollas.jpg" alt="Ollas-persoto">
+         <figcaption>Juego de ollas <br>250.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/reloj.jpg" alt="reloj-persoto">
+         <figcaption>Reloj inteligente <br>90.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/tv.jpg" alt="tv-persoto">
+         <figcaption>Tv Samsung 65" <br>2.150.000</figcaption>
+        </figure>
+        <figure>
+         <img src="imagenes/zapatilla.jpg" alt="zapatilla-persoto">
+         <figcaption>Zapatilla ligera<br>300.000</figcaption>
+        </figure>
+    </div>
+    <a href="#">
+        <button>Ver todo</button>
+    </a>
+   </section>
+  </div>
+ <footer class="footer">
+            <nav>
+               <ul>
+                <li><a href="#">Politicas de privacidad</a></li>
+                <li><a href="#">Redes sociales</a></li>
+                <li><a href="#">Contactenos</a></li>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+               </ul>
+            </nav> 
+ </footer>
+ 
+ </body>
+</html>
